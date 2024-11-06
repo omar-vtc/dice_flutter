@@ -9,6 +9,10 @@ void main() {
           title: const Center(
             child: Text(
               'Dicee',
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
           backgroundColor: Colors.red,
@@ -25,14 +29,10 @@ class DicePage extends StatelessWidget {
     return Row(
       children: [
         Expanded(
-          child: Image(
-            image: AssetImage('images/dice1.png'),
-          ),
+          child: Image.asset('images/dice1.png'),
         ),
         Expanded(
-          child: Image(
-            image: AssetImage('images/dice1.png'),
-          ),
+          child: Image.asset('images/dice1.png'),
         ),
       ],
     );
